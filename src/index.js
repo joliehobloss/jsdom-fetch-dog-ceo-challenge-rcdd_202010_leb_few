@@ -13,7 +13,7 @@ fetch(imgUrl)
   return response.json();
 })
 .then(function(json){
-json.message.
+json.message.forEach
   
 })
 }
