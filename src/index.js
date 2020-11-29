@@ -132,6 +132,9 @@ function loadBreeds() {
 loadBreeds()
 loadImages()
 
-
+document.addEventListener('DOMContentLoaded', function () {
+  loadImages();
+  loadBreedOptions();
+});
 
 
