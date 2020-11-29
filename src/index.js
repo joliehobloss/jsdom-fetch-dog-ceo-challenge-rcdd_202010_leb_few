@@ -6,7 +6,7 @@ const imgUrl = "https://dog.ceo/api/breeds/image/random/4";
 const breedUrl = 'https://dog.ceo/api/breeds/list/all'
 
 
-function challengeOne(){
+/*function challengeOne(){
 fetch(imgUrl)
 .then(function(response) {
   return response.json();
@@ -28,7 +28,7 @@ function challengeTwo(){
  renderBreed(json);
  console.log(json);
 })
-}
+}*/
 
 // Approach 1: Stateful
 // store all the breeds in an array
@@ -41,7 +41,7 @@ function challengeTwo(){
 // if they don't start with the letter, hide them with CSS
 
 // State
-/*let breedList = []
+let breedList = []
 
 // added the event listener to the dropdown
 dropdown.addEventListener("change", event => {
@@ -82,7 +82,7 @@ dogList.addEventListener("click", event => {
     // run our DOM logic
     event.target.style.color = "red"
   }
-})*/
+})
 
 function renderImage(imageUrl) {
   const img = document.createElement("img")
@@ -101,14 +101,13 @@ function renderAllImages(data) {
   })
 }
 
-/*function loadImages() {
+function loadImages() {
   // when the page loads
   // make a GET request
   fetch("https://dog.ceo/api/breeds/image/random/4")
     .then(response => response.json())
     .then(renderAllImages)
-}*/
-
+}
 
 function renderBreed(breed) {
   const li = document.createElement("li")
@@ -116,7 +115,7 @@ function renderBreed(breed) {
   dogList.append(li)
 }
 
-/*function loadBreeds() {
+function loadBreeds() {
   fetch("https://dog.ceo/api/breeds/list/all")
     .then(response => response.json())
     .then(data => {
@@ -131,9 +130,8 @@ function renderBreed(breed) {
 }
 
 loadBreeds()
-loadImages()*/
+loadImages()
 
-challengeOne();
-challengeTwo();
+
 
 
