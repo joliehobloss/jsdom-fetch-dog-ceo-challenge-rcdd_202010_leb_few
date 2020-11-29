@@ -12,7 +12,7 @@ fetch(imgUrl)
   return response.json();
 })
 .then(function(json){
- json.message.forEach(element => console.log(element));
+ renderAllImages(json);
 })
 }
 
@@ -27,7 +27,7 @@ fetch(imgUrl)
 // if they don't start with the letter, hide them with CSS
 
 // State
-let breedList = []
+/*let breedList = []
 
 // added the event listener to the dropdown
 dropdown.addEventListener("change", event => {
@@ -68,7 +68,7 @@ dogList.addEventListener("click", event => {
     // run our DOM logic
     event.target.style.color = "red"
   }
-})
+})*/
 
 function renderImage(imageUrl) {
   const img = document.createElement("img")
