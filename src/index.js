@@ -12,6 +12,7 @@ fetch(imgUrl)
   return response.json();
 })
 .then(function(json){
+  let
   
 })
 }
