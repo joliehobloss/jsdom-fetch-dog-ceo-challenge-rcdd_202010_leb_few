@@ -15,19 +15,6 @@ fetch(imgUrl)
  renderAllImages(json);
 })
 
-}
-
-function challengeTwo(){
-  fetch(breedUrl)
-.then(function(response) {
-  return response.json();
-})
-.then(function(json){
-  Object.keys(json.message).forEach(breed => {
-        renderBreed(breed)
- renderBreed(json);
- console.log(json);
-})
 }*/
 
 // Approach 1: Stateful
@@ -129,12 +116,10 @@ function loadBreeds() {
     })
 }
 
-loadBreeds()
-loadImages()
 
 document.addEventListener('DOMContentLoaded', function () {
-  loadImages();
-  loadBreedOptions();
+loadBreeds();
+loadImages();
 });
 
 
