@@ -23,7 +23,9 @@ function challengeTwo(){
   return response.json();
 })
 .then(function(json){
- //renderBreed(json);
+  Object.keys(json.message).forEach(breed => {
+        renderBreed(breed)
+ renderBreed(json);
  console.log(json);
 })
 }
