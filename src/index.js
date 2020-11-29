@@ -23,7 +23,8 @@ function challengeTwo(){
   return response.json();
 })
 .then(function(json){
- renderBreed(json);
+ //renderBreed(json);
+ console.log(json);
 })
 }
 
