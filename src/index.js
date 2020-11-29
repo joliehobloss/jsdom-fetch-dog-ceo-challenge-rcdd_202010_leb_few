@@ -5,6 +5,16 @@ const dropdown = document.querySelector("#breed-dropdown")
 const imgUrl = "https://dog.ceo/api/breeds/image/random/4";
 
 
+function challengeOne(){
+fetch(imgUrl)
+.then(function(response) {
+  return response.json();
+})
+.then(function(json){
+  
+})
+}
+
 // Approach 1: Stateful
 // store all the breeds in an array
 // filter the array
