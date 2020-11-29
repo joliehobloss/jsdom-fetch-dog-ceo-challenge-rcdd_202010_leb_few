@@ -17,6 +17,14 @@ fetch(imgUrl)
 })
 }
 
+function loadImages() {
+  const imgUrl = "https://dog.ceo/api/breeds/image/random/4"
+  fetch(imgUrl)
+    .then(res=> res.json())
+    .then(results => {results.message.forEach(image => renderImage(image)
+    )}
+    )}
+
 // Approach 1: Stateful
 // store all the breeds in an array
 // filter the array
