@@ -5,6 +5,7 @@ const dropdown = document.querySelector("#breed-dropdown")
 const imgUrl = "https://dog.ceo/api/breeds/image/random/4";
 
 
+
 function challengeOne(){
 fetch(imgUrl)
 .then(function(response) {
