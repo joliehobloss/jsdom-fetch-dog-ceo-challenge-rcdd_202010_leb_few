@@ -87,7 +87,7 @@ function renderAllImages(data) {
   })
 }
 
-function loadImages() {
+/*function loadImages() {
   // when the page loads
   // make a GET request
   fetch("https://dog.ceo/api/breeds/image/random/4")
@@ -117,10 +117,9 @@ function loadBreeds() {
 }
 
 loadBreeds()
-loadImages()
+loadImages()*/
 
-
-
+challengeOne();
 
 
 
