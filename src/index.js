@@ -14,8 +14,8 @@ fetch(imgUrl)
 .then(function(json){
  renderAllImages(json);
 })
-
 }*/
+
 
 // Approach 1: Stateful
 // store all the breeds in an array
