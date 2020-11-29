@@ -3,6 +3,7 @@ console.log('%c HI', 'color: firebrick')
 const dogList = document.querySelector("#dog-breeds")
 const dropdown = document.querySelector("#breed-dropdown")
 const imgUrl = "https://dog.ceo/api/breeds/image/random/4";
+const breedUrl = 'https://dog.ceo/api/breeds/list/all'
 
 
 function challengeOne(){
@@ -17,7 +18,7 @@ fetch(imgUrl)
 }
 
 function challengeTwo(){
-  fetch(imgUrl)
+  fetch(breedUrl)
 .then(function(response) {
   return response.json();
 })
@@ -103,7 +104,7 @@ function renderAllImages(data) {
   fetch("https://dog.ceo/api/breeds/image/random/4")
     .then(response => response.json())
     .then(renderAllImages)
-}
+}*/
 
 
 function renderBreed(breed) {
@@ -112,7 +113,7 @@ function renderBreed(breed) {
   dogList.append(li)
 }
 
-function loadBreeds() {
+/*function loadBreeds() {
   fetch("https://dog.ceo/api/breeds/list/all")
     .then(response => response.json())
     .then(data => {
