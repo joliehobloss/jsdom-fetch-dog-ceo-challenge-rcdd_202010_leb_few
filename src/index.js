@@ -23,7 +23,7 @@ function challengeTwo(){
   return response.json();
 })
 .then(function(json){
- renderAllImages(json);
+ renderBreed(json);
 })
 }
 
@@ -131,6 +131,6 @@ loadBreeds()
 loadImages()*/
 
 challengeOne();
-
+challengeTwo();
 
 
